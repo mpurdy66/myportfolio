@@ -10,17 +10,79 @@
 <body>
     <header>
         <nav>
-            <h2 >Charles Michael Purdy</h2>
+            <h2>Charles Michael Purdy</h2>
             <ul class="navigation-items">
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li class="navigation-item"><a href="#about-me">About Me</a></li>
+                <li class="navigation-item"><a href="#employers">Employers</a></li>
+                <li class="navigation-item"><a href="#skills">Skills</a></li>
+                <li class="navigation-item"><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        This is main
+        <section id="about-me">
+            <div class="me-container">
+                <div class="me-text-container">
+                    <h2>About Me</h2>
+                    <p>
+                        This text about me
+                    </p>
+                </div>
+                <div class="image-container">
+                    <img id="currentImage" src="./photos/Mike.jpg"
+                         alt="A photo of Me"
+                         class="portrait" />
+                    <div>
+                        <button id="btnPrev" onclick="showPreviousImage()">Prev</button>
+                        <button id="btnNext" onclick="showNextImage()">Next</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="employers">
+            <div class="employer-container">
+                <h2>Professional Experience</h2>
+                <details class="employer">
+                    <summary class="employer-title">
+                        <h3>CISION</h3>
+                    </summary>
+                    <h4>Applications Developer (2008 - 2024)</h4>
+                    <ul id="ul-summary">
+                        <li>Designed custom applications and created reporting for clients that had business needs beyond the capabilities of the company platform.</li>
+                        <li>Worked with custom team, other development teams, sales and account executives, directly with clients, and individually to complete these tasks.</li>
+                        <li>Involved in all phases of the application process from planning, designing, development, testing, deployment, and maintenance.</li>
+                    </ul>
+                </details>
+                <details class="employer">
+                    <summary class="employer-title">
+                        <h3>ADVANTECH</h3>
+                    </summary>
+                    <h4>Applications/Mobile Developer (2005 - 2008)</h4>
+                    <ul id="ul-summary">
+                        <li>Worked on government contracts to create, implement, and maintain pilot inventory projects used by several branches of the United States Military to greatly increase proficiency. </li>
+                        <li>Often worked on site at military bases directly with both military and civilian personnel.</li>
+                        <li>Developed desktop and mobile applications for Windows using Microsoft Visual Basic.</li>
+                    </ul>
+                </details>
+                <details class="employer">
+                    <summary class="employer-title">
+                        <h3>RENAISSANCE COMPUTING, LTD</h3>
+                    </summary>
+                    <h4>Consultant (1997 - 2005)</h4>
+                    <ul id="ul-summary">
+                        <li>Managed relationships with a varied client base, ensuring satisfaction and project success.</li>
+                        <li>Coordinated with a diverse portfolio of clients to execute projects from inception to completion.</li>
+                        <li>Installed and maintained accounting software to manage client financial records and reporting.</li>
+                    </ul>
+                </details>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+        </section>
     </main>
+    <footer>Made in <span class="heart">Maryland ♥</span> in America!!!</footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
